@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>/sample</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="gl" aria-hidden="true"></canvas>
+
+<div id="page">
+  <header id="hero">
+    <h1 data-n="/sample">/sample</h1>
+    <a id="cue" href="#desk" aria-label="Scroll down"><svg viewBox="0 0 9 9" aria-hidden="true"><path fill="currentColor" d="M1 2h1v2H1zM2 3h1v2H2zM3 4h1v2H3zM4 5h1v2H4zM5 4h1v2H5zM6 3h1v2H6zM7 2h1v2H7z"/></svg></a>
+  </header>
+
+  <div id="desk">
+    <div class="lane a">
+      <section class="win" id="about" aria-labelledby="t-about">
+        <header class="bar"><h2 id="t-about">About Me</h2></header>
+        <div class="body me">
+          <p class="who">Sample Name</p>
+          <p class="motto">Machines of loving grace.</p>
+          <p>Placeholder bio. Swap in a few lines about you, what you build and what you study.</p>
+          <p class="aff"><a href="#">Your University</a> · <a href="#">Your Lab</a> · <a href="#">Your Project</a></p>
+          <ul class="links">
+            <li><a href="#" aria-label="Email"><span class="k"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M1 3h14v1H1zM1 12h14v1H1zM1 4h1v8H1zM14 4h1v8h-1zM2 4h1v1H2zM13 4h1v1h-1zM3 5h1v1H3zM12 5h1v1h-1zM4 6h1v1H4zM11 6h1v1h-1zM5 7h1v1H5zM10 7h1v1h-1zM6 8h1v1H6zM9 8h1v1H9zM7 9h2v1H7z"/></svg></span></a></li>
+            <li><a href="#" aria-label="Friends"><span class="k"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M3 2h3v3h-3zM2 6h5v1h-5zM1 7h7v5h-7zM10 3h3v3h-3zM9 7h5v1h-5zM9 8h6v4h-6z"/></svg></span></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="win" id="contrib" aria-labelledby="t-con">
+        <header class="bar"><h2 id="t-con">Contribution</h2></header>
+        <ul class="list">
+          <li><a href="#"><span>Project One</span><span class="k">#1234</span><small>Kernels</small></a></li>
+          <li><a href="#"><span>Project Two</span><span class="k">#5678</span><small>Inference Engine</small></a></li>
+          <li><a href="#"><span>Project Three</span><span class="k">#9012</span><small>Programming Language</small></a></li>
+          <li><a href="#"><span>Project Four</span><span class="k">b5c11bf</span><small>Transport</small></a></li>
+        </ul>
+        <div class="more"><a href="#">more</a></div>
+      </section>
+    </div>
+
+    <div class="lane b">
+      <section class="win" id="articles" aria-labelledby="t-art">
+        <header class="bar"><h2 id="t-art">Article</h2></header>
+        <ul class="list toc">
+          <li><a href="#"><span class="t">First Article Title</span><span class="k">KJV</span></a></li>
+          <li><a href="#"><span class="t">Second Article Title</span><span class="k">Author</span></a></li>
+          <li><a href="#"><span class="t">Third Article Title</span><span class="k">City</span></a></li>
+        </ul>
+        <div class="more"><a href="#">more</a></div>
+        <div class="scraps" data-scraps="articles"></div>
+      </section>
+
+      <section class="win" id="papers" aria-labelledby="t-pap">
+        <header class="bar"><h2 id="t-pap">Research</h2></header>
+        <ul class="pap">
+          <li><p><a class="pt" href="#">A Placeholder Paper Title About Something Technical and Long</a></p><p class="m au"><span>First author</span></p><p class="m"><a href="#">arXiv 0000.00001</a><span>Submitted</span></p></li>
+          <li><p><a class="pt" href="#">Another Paper: Measurements and Optimizations</a></p><p class="m au"><span>First author</span></p><p class="m"><a href="#">arXiv 0000.00002</a><span>Submitted</span></p></li>
+          <li><p><a class="pt" href="#">A Negative Result on Something Plausible</a></p><p class="m au"><span>Second author</span></p><p class="m"><a href="#">arXiv 0000.00003</a><span>Submitted</span></p></li>
+        </ul>
+        <div class="more"><a href="#">more</a></div>
+        <div class="scraps" data-scraps="papers"></div>
+      </section>
+    </div>
+  </div>
+
+  <footer id="end"><a id="top" href="#hero" aria-label="Back to top"><svg viewBox="0 0 9 9" aria-hidden="true"><path fill="currentColor" d="M1 5h1v2H1zM2 4h1v2H2zM3 3h1v2H3zM4 2h1v2H4zM5 3h1v2H5zM6 4h1v2H6zM7 5h1v2H7z"/></svg></a></footer>
+</div>
+
+<div id="vig"></div>
+<div id="grade"></div>
+
+<div id="prefs">
+  <button class="glass" id="mode" type="button" aria-pressed="false" aria-label="Toggle dark mode"><span class="k"><svg viewBox="0 0 12 12" aria-hidden="true"><path fill="currentColor" d="M3 1h2v1h-2zM2 2h3v1h-3zM1 3h4v1h-4zM1 4h4v1h-4zM1 5h4v1h-4zM1 6h5v1h-5zM1 7h10v1h-10zM1 8h10v1h-10zM2 9h8v1h-8zM3 10h6v1h-6z"/></svg></span></button>
+</div>
+
+<script src="scene.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
